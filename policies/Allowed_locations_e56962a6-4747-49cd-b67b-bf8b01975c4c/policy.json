@@ -40,7 +40,7 @@
    }
   }
  },
-  "id": "/subscriptions/4351c6a2-2e13-4946-b985-1cfe33473f21/providers/Microsoft.Authorization/policyDefinitions",
+  "id": "/providers/Microsoft.Authorization/policyDefinitions,
   "type": "Microsoft.Authorization/policyDefinitions",
-  "name": "testpolicy"
+  "name": "Test Custom"
 }
