@@ -39,8 +39,5 @@
     "effect": "deny"
    }
   }
- },
-  "id": "/subscriptions/4351c6a2-2e13-4946-b985-1cfe33473f21/providers/Microsoft.Authorization/policyDefinitions/08df2b30-9c9f-41b9-958c-a3ed31117069",
-  "type": "Microsoft.Authorization/policyDefinitions",
-  "name": "08df2b30-9c9f-41b9-958c-a3ed31117069" 
+ }
 }
