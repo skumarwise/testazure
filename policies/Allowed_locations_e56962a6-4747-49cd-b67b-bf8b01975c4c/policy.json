@@ -39,5 +39,6 @@
     "effect": "deny"
    }
   }
- }
+ },
+ "id": "/providers/Microsoft.Authorization/policyDefinitions/"
 }
