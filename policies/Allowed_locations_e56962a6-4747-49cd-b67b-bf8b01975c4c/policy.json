@@ -40,5 +40,6 @@
    }
   }
  },
- "id": "/providers/Microsoft.Authorization/policyDefinitions/"
+ "id": "/providers/Microsoft.Authorization/policyDefinitions/",
+ "name": "Custom Allowed locations
 }
