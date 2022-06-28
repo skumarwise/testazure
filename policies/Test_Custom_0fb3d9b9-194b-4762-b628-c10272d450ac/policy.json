@@ -1,6 +1,6 @@
 {
  "properties": {
-  "displayName": "Test Custom",
+  "displayName": "Test Custom 2",
   "policyType": "Custom",
   "mode": "All",
   "metadata": {
@@ -13,7 +13,7 @@
    "allowedLocations": {
     "type": "Array",
     "metadata": {
-     "displayName": "Allowed locations",
+     "displayName": "Allowed locations 2",
      "description": "The list of allowed locations for resources.",
      "strongType": "location"
     }
@@ -31,7 +31,7 @@
    }
   }
  },
- "id": "/subscriptions/4351c6a2-2e13-4946-b985-1cfe33473f21/providers/Microsoft.Authorization/policyDefinitions/0fb3d9b9-194b-4762-b628-c10272d450ac",
+ "id": "/subscriptions/4351c6a2-2e13-4946-b985-1cfe33473f21/providers/Microsoft.Authorization/policyDefinitions/0fb3d9b9-194b-4762-b628-c10272d450ac_2",
  "type": "Microsoft.Authorization/policyDefinitions",
- "name": "0fb3d9b9-194b-4762-b628-c10272d450ac"
+ "name": "0fb3d9b9-194b-4762-b628-c10272d450ac_2"
 }
