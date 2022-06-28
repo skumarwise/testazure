@@ -40,7 +40,5 @@
    }
   }
  },
- "id": "/providers/Microsoft.Authorization/policyDefinitions/",
- "type": "Microsoft.Authorization/policyDefinitions",
- "name": "Allowed_locations"
+"outputs": {}
 }
