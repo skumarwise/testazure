@@ -20,10 +20,17 @@
    "parameterScopes": {
     "listOfAllowedLocations": "/subscriptions/4351c6a2-2e13-4946-b985-1cfe33473f21"
    },
-   "createdBy": "861aaba0-8f14-417a-93d3-7bd92af8f999",
-   "createdOn": "2022-06-28T15:37:53.4484317Z",
+   "createdBy": "c66ba945-8d20-4a3e-bfcf-5c1a52db8935",
+   "createdOn": "2022-06-28T15:42:18.6527278Z",
    "updatedBy": null,
-   "updatedOn": null
+   "updatedOn": null,
+   "gitHubPolicy": {
+    "digest": "a54de10bbc9c69e8a6c56ffdb4e274b3c8f34417",
+    "repoName": "skumarwise/testazure",
+    "commitSha": "769c2972c7941a86edb373979e29d94c95103a1f",
+    "runUrl": "https://github.com/skumarwise/testazure/actions/runs/2577425871",
+    "filepath": "policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_67932a2448b142ed98424e16.json"
+   }
   },
   "enforcementMode": "Default"
  },
