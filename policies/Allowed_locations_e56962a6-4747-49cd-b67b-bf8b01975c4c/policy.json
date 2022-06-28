@@ -42,4 +42,5 @@
  }
  ,"id": "Test"
  ,"name": "Allowed_locations"
+ ,"type": "Microsoft.Authorization/policyDefinitions"
 }
