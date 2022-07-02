@@ -35,7 +35,8 @@
       },
       "enforcementMode": "Default"
       },
-      "id": "/subscriptions/4351c6a2-2e13-4946-b985-1cfe33473f21/providers/Microsoft.Authorization/policyAssignments/65fc949ed1c34e36a75189d7",
+      
+      "id": "/subscriptions/4351c6a2-2e13-4946-b985-1cfe33473f21/resourceGroups/Test/providers/Microsoft.Authorization/policyAssignments/d4f0f7af3dab45d78a2f0dc9",
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "65fc949ed1c34e36a75189d7"
     }
