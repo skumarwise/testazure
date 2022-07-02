@@ -28,5 +28,7 @@ jobs:
     - name: Create or Update Azure Policies
       uses: azure/manage-azure-policy@v0
       with:
-        paths: |
-          policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**
+        #paths: |
+        #  policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**
+        template: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/
+        parameters: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json
