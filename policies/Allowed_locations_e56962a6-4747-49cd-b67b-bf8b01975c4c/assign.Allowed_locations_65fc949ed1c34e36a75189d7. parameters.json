@@ -1,1 +1,9 @@
 
+{
+  "parameters": {
+        "listOfAllowedLocations": {
+            "value": ["asia","australiaeast"]
+        }
+        
+    }
+}
