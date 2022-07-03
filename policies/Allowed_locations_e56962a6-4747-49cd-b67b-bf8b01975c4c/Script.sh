@@ -1,6 +1,12 @@
 #!/bin/sh
 
-echo $1
+#echo $1
+
+for i in $(echo $1 | sed "s/,/ /g")
+do
+    # call your procedure/other scripts here below
+    echo "$i"
+done
 
 #az login --service-principal -u 0dca7096-661c-4a13-9c28-950abaf9849c -p waT8Q~Pwrm9eLUKNbjyTtdrriDut2ARfFw9PhbNa --tenant b704ff8d-1b26-40df-a618-c65903426cb3
 
