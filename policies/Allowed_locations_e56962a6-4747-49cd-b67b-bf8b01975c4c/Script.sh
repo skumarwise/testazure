@@ -8,7 +8,7 @@ az extension add --name subscription
 
 #az account list
 
-az account subscription rename --subscription-id 4351c6a2-2e13-4946-b985-1cfe33473f21 --name MaximusSandBox2
+az account subscription rename --subscription-id 4351c6a2-2e13-4946-b985-1cfe33473f21 --name MaximusSandBoxTest
 
 
 az account management-group create --name MaximusMG
