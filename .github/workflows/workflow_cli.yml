@@ -15,7 +15,7 @@ on:
 #      - 'policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**'
 #      - .github/workflows/manage-azure-policy-e65fb29a.yml
 jobs:
-  apply-azure-policy:
+  run-azure-cli:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
