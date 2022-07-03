@@ -2,11 +2,17 @@ name: manage-azure-cli-e65fb29a
 on:
   workflow_dispatch:
     inputs:
-      remarks:
+      Remarks:
         description: 'Reason for triggering the workflow run'
         required: false
-        default: 'Updating Azure Policies'
-
+        default: 'Run azure script'
+      Subscription:
+        description: 'Enter Subscription Id with coma seperated'
+        required: false
+        #default: 'Run azure script'
+      Group:  
+        description: 'Enter Group Id with coma seperated'
+        required: false
 
 ## Uncomment the following if you wish to automatically trigger workflow run with every commit
 #
@@ -31,6 +37,6 @@ jobs:
         azcliversion: 2.30.0
         inlineScript: |
           chmod +x policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/Script.sh
-          policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/Script.sh test123
+          policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/Script.sh ${{ inputs.Subscription }}
           
         
