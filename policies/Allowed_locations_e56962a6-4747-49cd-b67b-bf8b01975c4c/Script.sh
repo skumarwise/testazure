@@ -4,7 +4,9 @@ echo $1
 
 #az login --service-principal -u 0dca7096-661c-4a13-9c28-950abaf9849c -p waT8Q~Pwrm9eLUKNbjyTtdrriDut2ARfFw9PhbNa --tenant b704ff8d-1b26-40df-a618-c65903426cb3
 
-az extension add --name subscription
+#az extension add --name subscription
+
+az config set extension.use_dynamic_install=yes_without_prompt
 
 #az account list
 
