@@ -20,6 +20,6 @@ az account management-group create --name MaximusMG
 az account management-group subscription add --name MaximusMG --subscription 4351c6a2-2e13-4946-b985-1cfe33473f21
 
 #az role assignment create --assignee "767f35ce-2ea5-4f2c-88ac-cc5e5ee433d4" --role "Contributor" --subscription "4351c6a2-2e13-4946-b985-1cfe33473f21"
-az role assignment create --assignee-object-id "767f35ce-2ea5-4f2c-88ac-cc5e5ee433d4" ----assignee-principal-type "Everyone" --role "Contributor" --subscription "4351c6a2-2e13-4946-b985-1cfe33473f21"
+az role assignment create --assignee-object-id "767f35ce-2ea5-4f2c-88ac-cc5e5ee433d4" --assignee-principal-type "Everyone" --role "Contributor" --subscription "4351c6a2-2e13-4946-b985-1cfe33473f21"
 
 #az logout
