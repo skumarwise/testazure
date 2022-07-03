@@ -25,10 +25,12 @@ jobs:
       with:
         creds: ${{secrets.AZURE_CREDENTIALS_e65fb29a}}
         allow-no-subscriptions: true
-    - name: Create or Update Azure Policies
-      uses: azure/manage-azure-policy@v0
-      #uses: azure/arm-deploy@v1
+    - name: Azure CLI script file
+      uses: azure/CLI@v1
       with:
-        paths: |
-          policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**
+        azcliversion: 2.30.0
+        inlineScript: |
+          chmod +x $GITHUB_WORKSPACE/sampleScript.sh
+          $GITHUB_WORKSPACE/sampleScript.sh
+          #policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**
         
