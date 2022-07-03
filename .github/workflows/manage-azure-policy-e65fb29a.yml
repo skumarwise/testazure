@@ -26,11 +26,11 @@ jobs:
         creds: ${{secrets.AZURE_CREDENTIALS_e65fb29a}}
         allow-no-subscriptions: true
     - name: Create or Update Azure Policies
-      #uses: azure/manage-azure-policy@v0
-      uses: azure/arm-deploy@v1
+      uses: azure/manage-azure-policy@v0
+      #uses: azure/arm-deploy@v1
       with:
-        #paths: |
-        #  policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**
-        resourceGroupName: Test
-        template: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
-        parameters: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json
+        paths: |
+          policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**
+        #resourceGroupName: Test
+        #template: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
+        #parameters: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json
