@@ -20,6 +20,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: ReplaceValue
+      uses: microsoft/variable-substitution@v1 
+      with:
+        files: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
     - name: Login to Azure
       uses: azure/login@v1
       with:
