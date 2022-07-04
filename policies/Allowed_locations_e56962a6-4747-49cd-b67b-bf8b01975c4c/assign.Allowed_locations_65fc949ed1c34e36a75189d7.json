@@ -8,7 +8,13 @@
   "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
   "scope": "/subscriptions/4351c6a2-2e13-4946-b985-1cfe33473f21",
   "notScopes": [],
-  "parameters": "[parameters('listOfAllowedLocations')]",
+  "parameters": {
+   "listOfAllowedLocations": {
+    "value": [
+     "australiaeast"
+    ]
+   }
+  },
   "metadata": {
    "assignedBy": "Mekala Shiva",
    "parameterScopes": {
