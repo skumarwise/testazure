@@ -20,21 +20,21 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    #- name: ReplaceValue
-    #  uses: microsoft/variable-substitution@v1 
-    #  with:
-    #    files: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
-    #  env:
-        #properties.parameters.listOfAllowedLocations.value.0: "australiaeast"
+    - name: ReplaceValue
+      uses: microsoft/variable-substitution@v1 
+      with:
+        files: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
+      env:
+        properties.parameters.listOfAllowedLocations.value.0: "australiaeast"
         #properties.parameters.listOfAllowedLocations.value.1: ""
         #properties.parameters.listOfAllowedLocations.value: "['australiaeast','asia']"
     #- name: Update .json
     #  run: jq --argjson groupInfo "$(<policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json)" 'type += [$groupInfo]' policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
     
-    - name: Run JQ cmd
-      uses: sergeysova/jq-action@v2
-      with:
-        cmd: jq --argjson groupInfo "$(<policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json)" '.text += [$groupInfo]' policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
+    #- name: Run JQ cmd
+    #  uses: sergeysova/jq-action@v2
+    #  with:
+    #    cmd: jq --argjson groupInfo "$(<policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json)" '.text += [$groupInfo]' policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
     
     #- name: Update json version
     #  uses: jossef/action-set-json-field@v2
@@ -51,12 +51,12 @@ jobs:
     #  with:
     #    creds: ${{secrets.AZURE_CREDENTIALS_e65fb29a}}
     #    allow-no-subscriptions: true
-    #- name: Create or Update Azure Policies
-    #  uses: azure/manage-azure-policy@v0
-    #  #uses: azure/arm-deploy@v1
-    #  with:
-    #    paths: |
-    #      policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      #uses: azure/arm-deploy@v1
+      with:
+        paths: |
+          policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/**
         #resourceGroupName: Test
         #template: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
         #parameters: policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json
