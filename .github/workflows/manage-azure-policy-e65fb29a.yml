@@ -29,7 +29,7 @@ jobs:
         #properties.parameters.listOfAllowedLocations.value.1: ""
         #properties.parameters.listOfAllowedLocations.value: "['australiaeast','asia']"
     - name: Update .json
-      run: echo jq --argjson groupInfo "$(<policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json)" '.[].properties.parameters.listOfAllowedLocations.value += "test"' policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
+      run: echo jq --argjson groupInfo "$(<policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/parameters.json)" '.type += "test"' policies/Allowed_locations_e56962a6-4747-49cd-b67b-bf8b01975c4c/assign.Allowed_locations_65fc949ed1c34e36a75189d7.json
     
     #- name: Update json version
     #  uses: jossef/action-set-json-field@v2
