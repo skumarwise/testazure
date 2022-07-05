@@ -8,6 +8,14 @@ terraform {
       version = "~>2.0"
     }
   }
+  
+  backend "azurerm" {
+    resource_group_name  = "TerraformStateRG"
+    storage_account_name = "maximusterraformstate"
+    container_name       = "tfstatemaximus"
+    key                  = "tfstatemaximus.tfstate"
+  }
+  
 }
 
 provider "azurerm" {
