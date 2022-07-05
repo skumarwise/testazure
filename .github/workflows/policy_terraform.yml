@@ -1,4 +1,4 @@
-name: manage-azure-policy-e65fb29a
+name: terraform-manage-azure-policy
 on:
   workflow_dispatch:
     inputs:
