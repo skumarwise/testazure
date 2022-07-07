@@ -14,3 +14,7 @@ resource "azurerm_policy_assignment" "example" {
   display_name         = "Policy Assignment via Terraform"
   parameters = file("${path.module}/parameters.json")
 }
+
+output "allowed_locations_id" {
+  value = data.azurerm_policy_definition.allowed_locations.id
+}
