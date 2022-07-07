@@ -6,6 +6,6 @@ data "azurerm_policy_definition" "allowed_locations" {
 
 
 data "azurerm_policy_definition" "allowed_resource_types" {
-  display_name = "Allowed Resource Types"
+  display_name = "Allowed resource types"
 }
 
