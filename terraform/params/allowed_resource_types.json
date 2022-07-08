@@ -1,0 +1,5 @@
+{
+    "listOfResourceTypesAllowed": {
+      "value": ["microsoft.azurearcdata/sqlmanagedinstances"]
+    }
+  }
