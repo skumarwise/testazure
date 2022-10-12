@@ -17,3 +17,9 @@ resource "azurerm_policy_assignment" "allowed_resource_types" {
   display_name         = "Allowed Resource Types:Policy Assignment via Terraform"
   parameters = file("${path.module}/params/allowed_resource_types.json")
 }
+
+resource "azuread_group" "example" {
+  display_name     = "example"
+  #owners           = [data.azuread_client_config.current.object_id]
+  security_enabled = true
+}
